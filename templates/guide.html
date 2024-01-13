@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+</head>
+<body id="guideBody">
+    <button onclick="location.href = '/';" class="navButton">Back</button>
+
+    <h1>Guide</h1>
+
+    <p>
+    You have to format the problems in a specific way, or you will get an internal server error. Here is an example: <b>Section: 4-6, Pages: 287-293, Problems: 8, 9, 10, 11-16, 20-26 even, 31-37 odd, 10-25 every 5</b> <br> This text will be put at the top of each page and will be parsed to get the problem numbers. The only thing that you have to include is the <b>"Problems: x, y, z"</b> at the end. The generator also allows for variations of numbers: <br>
+        <ul>
+            <li>Single number: x, y, z</li>
+            <li>Number range: x-y</li>
+            <li>Odd range: x-y odd</li>
+            <li>Even range: x-y even</li>
+            <li>Multiples x-y every z</li>
+        </ul> <br>
+    Enjoy!
+    </p>
+</body>
+</html>
